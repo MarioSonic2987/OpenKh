@@ -30,6 +30,9 @@ namespace OpenKh.Engine.Parsers
             B = (byte)clr;
             A = (byte)(clr >> 24);
         }
+
+        public override string ToString() =>
+            $"P({X}, {Y}, {Z}) T({Tu}, {Tv})";
     }
 
     public class MeshDescriptor
